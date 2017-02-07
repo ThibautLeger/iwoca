@@ -1,0 +1,72 @@
+.navbar-default {
+	background-color: transparent;
+	padding: 15px 0;
+	border: none;
+	z-index: 10;
+	@media (max-width: 767px) {
+		background-color: white;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 15px;
+	}
+	.navbar-nav {
+		font-size: 14px;
+		text-transform: uppercase;
+		li {
+			a {
+				padding: 5px;
+				margin: 0 10px;
+				color: white;
+				&:hover {
+					color: $blue;
+				}
+				@media (max-width: 767px) {
+					color: $blue;
+				}
+			}
+			&:last-child {
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border: 1px solid white;
+				&:hover {
+					border: 1px solid $blue;
+				}
+				@media (max-width: 767px) {
+					background: $blue;
+				}
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+	.navbar-toggle {
+		border: none;
+		padding: 9px 0;
+		margin-right: 0;
+		&:hover, &:focus {
+			background-color: transparent;
+		}
+		.icon-bar {
+			background-color: $blue;
+		}
+	}
+	.navbar-collapse {
+		border: none;
+	}
+}
+
+.navbar-brand {
+	background: url(../images/iwoca-logo.svg) no-repeat center;
+	background-size: 135px 35px;
+	width: 135px;
+	text-indent: -999%;
+	@media (max-width: 767px) {
+		background: url(../images/iwoca-logo-mobile.svg) no-repeat center;
+		background-size: 80px 20px;
+		width: 80px;
+	}
+}
